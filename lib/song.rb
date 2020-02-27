@@ -48,7 +48,8 @@ class Song
     artist_and_song_file = song_filename.split(' - ')
     artist = artist_and_song_file[0]
     song_name = artist_and_song_file[1].split('.')[0]
-    puts "Artist: #{artist}, Song: #{song_name}"
+    song = self.new_by_name(song_name)
+    song.artist = artist
   end
 
 end
