@@ -24,6 +24,7 @@ class Song
 
   def self.create_by_name(song_name)
     self.all << new_by_name(song_name)
+    puts new_by_name(song_name)
   end
 
 end
