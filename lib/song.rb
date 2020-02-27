@@ -41,9 +41,7 @@ class Song
   end
 
   def self.alphabetical
-    self.all.sort do |song1, song2|
-      song1.name < song2.name
-    end
+    self.all.sort
   end
 
 end
